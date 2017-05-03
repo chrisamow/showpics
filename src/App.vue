@@ -2,16 +2,26 @@
   <div id="app">
     <img src="./assets/logo.png">
     <hello></hello>
+			<carousel>
+        <slide>
+          Slide 1 REALLY BIG REALLY BIG Content
+        </slide>
+        <slide>
+          Slide 2 REALLY BIG REALLY BIG Content
+        </slide>
+      </carousel>
+
   </div>
 </template>
 
 <script>
 import Hello from './components/Hello'
+import {Carousel, Slide} from 'vue-carousel'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Hello, Carousel, Slide
   }
 }
 </script>
@@ -26,3 +36,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
